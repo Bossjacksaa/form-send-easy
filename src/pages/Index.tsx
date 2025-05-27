@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,11 +39,11 @@ const Index = () => {
         {isMenuOpen && (
           <div className="bg-white border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-3 px-4">
-              <a href="#demo" className="text-black hover:text-[#2d3c88] transition-colors">Demo</a>
-              <a href="#services" className="text-black hover:text-[#2d3c88] transition-colors">Services</a>
-              <a href="#support" className="text-black hover:text-[#2d3c88] transition-colors">Support</a>
-              <a href="#pricing" className="text-black hover:text-[#2d3c88] transition-colors">Pricing</a>
-              <a href="#docs" className="text-black hover:text-[#2d3c88] transition-colors">Documentation</a>
+              <Link to="/demo" className="text-black hover:text-[#2d3c88] transition-colors">Demo</Link>
+              <Link to="/services" className="text-black hover:text-[#2d3c88] transition-colors">Services</Link>
+              <Link to="/support" className="text-black hover:text-[#2d3c88] transition-colors">Support</Link>
+              <Link to="/pricing" className="text-black hover:text-[#2d3c88] transition-colors">Pricing</Link>
+              <Link to="/docs" className="text-black hover:text-[#2d3c88] transition-colors">Documentation</Link>
             </nav>
           </div>
         )}
