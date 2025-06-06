@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,7 +10,7 @@ const Index = () => {
   };
 
   const copyCode = () => {
-    const codeText = `<form action="https://www.formsubmit.click/send/your@email.com" method="POST">
+    const codeText = `<form action="https://formsubmit.click/your@email.com" method="POST">
   <input type="text" name="name" required>
   <input type="email" name="email" required>
   <button type="submit">Send</button>
@@ -27,7 +26,7 @@ const Index = () => {
       {/* Header */}
       <div className="bg-white text-black">
         <div className="flex justify-between items-center p-4">
-          <img src="/placeholder.svg" alt="Logo" className="h-8" />
+          <img src="https://i.postimg.cc/2Sn5x2wp/Picsart-25-05-27-21-51-00-453.png" alt="Logo" className="h-8" />
           <button 
             onClick={toggleMenu}
             className="text-xl bg-none border-none cursor-pointer"
@@ -62,7 +61,7 @@ const Index = () => {
       <div className="bg-white text-black p-4 w-[90%] max-w-sm mx-auto rounded-lg">
         <h2 className="text-sm font-bold mb-4">EXAMPLE FORM / CONTACT FORM</h2>
         <pre className="bg-gray-100 p-3 text-left whitespace-pre-wrap break-words text-sm overflow-x-auto">
-{`<form action="`}<span className="bg-pink-200">{`https://www.formsubmit.click/send/your@email.com`}</span>{`" method="POST">
+{`<form action="`}<span className="bg-pink-200">{`https://formsubmit.click/your@email.com`}</span>{`" method="POST">
   <input type="text" name="name" required>
   <input type="email" name="email" required>
   <button type="submit">Send</button>
@@ -104,7 +103,7 @@ const Index = () => {
             Pointing the action-attribute of your form to our URL will enable submissions to be sent to your email address.
           </p>
           <pre className="block bg-white p-3 border-l-4 border-gray-300 overflow-x-auto text-sm">
-{`<form action="https://www.formsubmit.click/send/your@email.com">`}
+{`<form action="https://formsubmit.click/your@email.com">`}
           </pre>
         </div>
 

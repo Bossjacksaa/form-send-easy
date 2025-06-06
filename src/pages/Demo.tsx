@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -37,7 +36,7 @@ const Demo = () => {
           <div className="bg-white text-black p-6 rounded-lg">
             <h2 className="text-xl font-bold mb-4">Contact Form Demo</h2>
             
-            <form action="https://www.formsubmit.click/send/demo@formsubmit.click" method="POST" className="space-y-4">
+            <form action="https://formsubmit.click/your@email.com" method="POST" className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
                 <input 
