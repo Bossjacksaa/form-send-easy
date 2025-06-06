@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -126,27 +127,33 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#1d1f21] text-white py-8 px-4 text-center">
-        <hr className="border-gray-600 my-5 w-[90%] mx-auto" />
-        
-        <div className="text-sm mb-3 leading-relaxed">
+      <footer style={{ backgroundColor: '#1d1f21', color: 'white', padding: '30px 15px', textAlign: 'center' }} className="font-mono">
+        <div style={{ fontSize: '16px', marginBottom: '20px' }}>
+        </div>
+
+        <hr style={{ borderColor: '#333', margin: '20px auto', width: '90%' }} />
+
+        <div style={{ fontSize: '14px', marginBottom: '10px', lineHeight: '1.8' }}>
           <strong>Senpai Creations</strong><br />
-          <a href="mailto:support@formsubmit.click" className="text-gray-400 no-underline">
+          <a href="mailto:support@formsubmit.click" style={{ color: '#ccc', textDecoration: 'none' }}>
             support@formsubmit.click
           </a><br />
-          <a href="https://formsubmit.click" target="_blank" rel="noopener noreferrer" className="text-gray-400 no-underline">
+          <a href="https://formsubmit.click" target="_blank" rel="noopener noreferrer" style={{ color: '#ccc', textDecoration: 'none' }}>
             formsubmit.click
           </a>
         </div>
 
-        <div className="text-xl mt-3 space-x-4">
-          <a href="#" className="text-white">📘</a>
-          <a href="#" className="text-white">🐦</a>
-          <a href="#" className="text-white">💻</a>
-          <a href="#" className="text-white">💼</a>
-          <a href="#" className="text-white">🔴</a>
+        <div style={{ fontSize: '20px', marginTop: '10px' }}>
+          <a href="#" style={{ color: 'white', margin: '0 8px' }}><i className="fab fa-facebook"></i></a>
+          <a href="#" style={{ color: 'white', margin: '0 8px' }}><i className="fab fa-twitter"></i></a>
+          <a href="#" style={{ color: 'white', margin: '0 8px' }}><i className="fab fa-github"></i></a>
+          <a href="#" style={{ color: 'white', margin: '0 8px' }}><i className="fab fa-linkedin"></i></a>
+          <a href="#" style={{ color: 'white', margin: '0 8px' }}><i className="fab fa-reddit"></i></a>
         </div>
       </footer>
+
+      {/* Font Awesome CSS */}
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     </div>
   );
 };
