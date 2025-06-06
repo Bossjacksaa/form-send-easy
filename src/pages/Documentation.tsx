@@ -32,8 +32,8 @@ const Documentation = () => {
                 <div>
                   <h3 className="text-lg font-bold mb-2">1. Basic Setup</h3>
                   <p className="mb-2">Point your form action to our endpoint:</p>
-                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
-{`<form action="https://www.formsubmit.click/send/your@email.com" method="POST">
+                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm break-all whitespace-pre-wrap">
+{`<form action="https://formsubmit.click/your@email.com" method="POST">
   <input type="text" name="name" required>
   <input type="email" name="email" required>
   <button type="submit">Send</button>
@@ -44,7 +44,7 @@ const Documentation = () => {
                 <div>
                   <h3 className="text-lg font-bold mb-2">2. Add Name Attributes</h3>
                   <p className="mb-2">Include name attributes in all form elements:</p>
-                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
+                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm break-all whitespace-pre-wrap">
 {`<input type="text" name="fullname" placeholder="Full Name">
 <input type="email" name="email" placeholder="Email Address">
 <textarea name="message" placeholder="Your message"></textarea>`}
@@ -63,7 +63,7 @@ const Documentation = () => {
                 <div>
                   <h3 className="text-lg font-bold mb-2">Custom Subject Line</h3>
                   <p className="mb-2">Add a custom subject to your emails:</p>
-                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
+                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm break-all whitespace-pre-wrap">
 {`<input type="hidden" name="_subject" value="New contact form submission">`}
                   </pre>
                 </div>
@@ -71,7 +71,7 @@ const Documentation = () => {
                 <div>
                   <h3 className="text-lg font-bold mb-2">Custom Redirect</h3>
                   <p className="mb-2">Redirect users after submission:</p>
-                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
+                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm break-all whitespace-pre-wrap">
 {`<input type="hidden" name="_next" value="https://yoursite.com/thanks.html">`}
                   </pre>
                 </div>
@@ -79,7 +79,7 @@ const Documentation = () => {
                 <div>
                   <h3 className="text-lg font-bold mb-2">Auto Response</h3>
                   <p className="mb-2">Send automatic replies to users:</p>
-                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
+                  <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm break-all whitespace-pre-wrap">
 {`<input type="hidden" name="_autoresponse" value="Thank you for contacting us!">`}
                   </pre>
                 </div>
@@ -94,8 +94,8 @@ const Documentation = () => {
               
               <div className="space-y-4">
                 <p>For AJAX form submissions, use this JavaScript example:</p>
-                <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
-{`fetch('https://www.formsubmit.click/send/your@email.com', {
+                <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm break-all whitespace-pre-wrap">
+{`fetch('https://formsubmit.click/your@email.com', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ const Documentation = () => {
                 <h2 className="text-2xl font-bold">Important Notes</h2>
               </div>
               
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm">
                 <li>• All form fields must have name attributes</li>
                 <li>• Forms must use POST method</li>
                 <li>• File uploads are supported (max 10MB per file)</li>

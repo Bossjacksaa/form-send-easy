@@ -27,12 +27,12 @@ const Support = () => {
                 <Mail className="w-8 h-8 text-[#2d3c88]" />
                 <h3 className="text-xl font-bold">Email Support</h3>
               </div>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-sm">
                 Get direct help from our support team via email.
               </p>
               <a 
                 href="mailto:support@formsubmit.click" 
-                className="bg-[#2d3c88] text-white px-4 py-2 rounded hover:bg-[#1f2a5f] transition-colors inline-block"
+                className="bg-[#2d3c88] text-white px-4 py-2 rounded hover:bg-[#1f2a5f] transition-colors inline-block text-sm"
               >
                 Contact Support
               </a>
@@ -43,7 +43,7 @@ const Support = () => {
                 <Clock className="w-8 h-8 text-[#2d3c88]" />
                 <h3 className="text-xl font-bold">Response Time</h3>
               </div>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-sm">
                 We typically respond to support requests within 24 hours during business days.
               </p>
             </div>
@@ -54,23 +54,23 @@ const Support = () => {
             
             <div className="space-y-6">
               <div>
-                <h4 className="font-bold mb-2">How do I set up my form?</h4>
-                <p className="text-gray-700">Simply point your form's action attribute to https://www.formsubmit.click/send/your@email.com and replace "your@email.com" with your actual email address.</p>
+                <h4 className="font-bold mb-2 text-sm">How do I set up my form?</h4>
+                <p className="text-gray-700 text-sm break-words">Simply point your form's action attribute to https://formsubmit.click/your@email.com and replace "your@email.com" with your actual email address.</p>
               </div>
               
               <div>
-                <h4 className="font-bold mb-2">Is FormSubmit really free?</h4>
-                <p className="text-gray-700">Yes! FormSubmit.click is completely free to use with no hidden fees, registration requirements, or usage limits.</p>
+                <h4 className="font-bold mb-2 text-sm">Is FormSubmit really free?</h4>
+                <p className="text-gray-700 text-sm">Yes! FormSubmit.click is completely free to use with no hidden fees, registration requirements, or usage limits.</p>
               </div>
               
               <div>
-                <h4 className="font-bold mb-2">What happens to my form data?</h4>
-                <p className="text-gray-700">Your form submissions are sent directly to your email and are not stored on our servers for privacy and security.</p>
+                <h4 className="font-bold mb-2 text-sm">What happens to my form data?</h4>
+                <p className="text-gray-700 text-sm">Your form submissions are sent directly to your email and are not stored on our servers for privacy and security.</p>
               </div>
               
               <div>
-                <h4 className="font-bold mb-2">Can I customize the email format?</h4>
-                <p className="text-gray-700">Yes! You can customize subject lines, add hidden fields, and control the email format using our advanced features.</p>
+                <h4 className="font-bold mb-2 text-sm">Can I customize the email format?</h4>
+                <p className="text-gray-700 text-sm">Yes! You can customize subject lines, add hidden fields, and control the email format using our advanced features.</p>
               </div>
             </div>
           </div>
